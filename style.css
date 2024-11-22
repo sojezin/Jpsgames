@@ -1,0 +1,552 @@
+html, body {
+font-family: "Unkempt", cursive;
+  background-color: white;
+  font-weight:700; 
+}
+
+h1{
+font-family: "Indie Flower", cursive; 
+background-color: grey;
+display:flex;
+color:black;
+font-weight:650;
+font-size: 40px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container img{
+  height: 80px;
+  padding: 20px;
+}
+
+.topo{
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px;
+}
+
+.menuimg{
+  padding: 1em;
+}
+
+.menu{
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-image: url("menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.listamenu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px grey;
+  border-radius: 0 0 20px 20px;
+  font-size: 30px;
+}
+
+
+.abrirmenu:checked ~ .listamenu{
+  display: block;
+}
+
+.menulink{
+  text-decoration: none;
+  color: black;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.menuitem{
+  padding: 10px;
+}
+
+.listamenu .menuitem:hover{
+  background-color: darkcyan;
+}
+
+.menulink:hover{
+  color: blue;
+  font-weight: 1000;
+}
+
+.inicio{
+  background: lightblue;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 2.5em 2em;
+  margin-bottom: 1em;
+  box-shadow: 5px 4px 4px grey;
+}
+
+.iniciotitulo{
+  padding-bottom: 30px;
+}
+
+.iniciotexto{
+  margin: 2em 0;
+}
+
+.pesquisa{
+  background-color: white;
+  border: 1px solid white;
+  color: white;
+  font-family: "Unkempt", cursive;
+  border-radius: 24px;
+  padding: 2em;
+  width: 70%;
+  font-weight: 700;
+  text-align: center;
+  color: silver
+}
+
+.pesquisa::placeholder{
+  font-size: 30px;
+  color: blue;
+  font-weight: 400;
+  text-align: center;
+}
+
+.titulos{
+  width:500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 40px;
+  box-shadow: 5px 4px 4px gray;
+}
+
+.swiper-wrapper{
+  padding-top: 20px;
+}
+
+.swiper-slide img{
+  width: 100%;
+  box-shadow: 5px 4px 4px gray;
+  opacity: 0.8;
+}
+
+.swiper-slide img:hover{
+  opacity: 1.0;
+  border: 3px solid lightblue;
+}
+
+.swiper{
+  margin: 80px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color: black;
+}
+
+.swiper-pagination-bullet, .swiper-pagination-bullet-active{
+   background-color: black;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  color: black;
+}
+
+.indicacoes{
+  background: darkslategray;
+  color: white;
+  flex-direction: row;
+  box-shadow: 0px 4px 4px gray;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1em 1em 1em 3em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.descricao{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.descricaotitulo{
+  color: black;
+  font-weight: 600;
+  display: flex;
+  font-size: 60px;
+}
+
+.descricaolivro{
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0.5em 0;
+  display: flex;
+  padding-right: 50px;
+}
+
+.descricaotexto{
+  font-size: 30px;
+  display: flex;
+  padding-right: 100px;
+  text-align: justify;
+  width: 100%;
+}
+
+.descricaoimg{
+  height: 300px;
+  width: auto;
+  display: flex;
+  margin-bottom: 70px;
+  border-radius: 30px;
+  box-shadow: 10px 10px rgba(0,0,0,0.25);
+}
+
+.botoes img{
+  width: 40px;
+  height: 40px;
+}
+
+.botoes{
+  display: flex;
+}
+
+.itembotoes{
+  margin: 0 0.5em;
+  margin-top: 40px;
+}
+
+.saibamais{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.botao{
+  background-color: white;
+  padding: 1em 2.2em;
+  display: block;
+  margin: 0 auto;
+  color: black;
+  text-decoration: none;
+  border-radius: 200px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.botao:hover{
+  background-color: gray;
+  font-size: 28px;
+}
+
+.menor{
+  width: 200px;
+  height: auto;
+}
+
+.topicos{
+  background: grey;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.topicostitulos{
+  color: white;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 1em;
+}
+
+.topicoslista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topicositem{
+  margin: 2em 1em;
+}
+
+.topicoslink{
+  color: black;
+  text-decoration: none;
+  background-color: lightcyan;
+  padding: 1em;
+  border-radius: 200px;
+  font-size: 26px;
+}
+
+.topicoslink:hover{
+  background-color: lightblue;
+  font-size: 27px;
+  font-weight: 600;
+  box-shadow: 0px 6px 6px grey;
+}
+
+.contato{
+  background-color: white;
+  padding: 3em;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatotitulo{
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+}
+
+.contatotexto{
+  font-weight: 300;
+  font-size: 35px;
+  color: black;
+  margin: 1em 0;
+}
+
+.contatoemail{
+  background-color: transparent;
+  border: 1px solid black;
+  color: silver;
+  border-radius: 100px;
+  padding: 2em;;
+  width: 50%;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Unkempt", cursive;;
+  font-size: 25px;
+}
+
+.contatoemail::placeholder{
+  color: black;
+  opacity: 0.7;
+  background: url("cartinha.png") no-repeat 5%;
+  background-size: 35px;
+  width: 60%;
+}
+
+.contato input{
+  padding: 0.5em;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 30px;
+}
+
+.rodape{
+  background-color: grey;
+  padding: 1em;
+}
+
+.rodapetitulo{
+   width:500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 80px;
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 20px;
+  box-shadow: 5px 4px 4px gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.listarodape{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.rodapeitem{
+  display: flex;
+  align-items: center;
+}
+
+.rodapeitem img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  box-shadow: 5px 4px 4px lightgray;
+}
+
+.rodapelink{
+  color: white;
+  text-decoration: none;
+  margin-left: 0.6em;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px){
+  .opcoes{
+    display: flex;
+    padding-left: 5em;
+    gap: 2em;
+  }
+  .opcoesitem, .opcoeslink{
+    border-radius: 100px;
+  }
+  .opcoesitem:hover, .opcoeslink:hover{
+    background-color: lightblue;
+    border-radius: 100px;
+    font-weight: 1000;
+    color: black;
+  }
+  .menuimg{
+    display: none;
+  }
+  .opcoesitem{
+    padding:0.5em;
+    text-transform: uppercase;
+    box-shadow: 5px 4px 4px silver;
+    font-size: 30px; 
+  }
+  .opcoeslink{
+    text-decoration: none;
+    color:black;
+    font-weight:800;
+  }
+  .opcoesbotao:checked ~ .listamenu{
+    display:block;
+    position: absolute;
+    width: auto;
+  }
+  .listamenu{
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+  }
+  .pc{
+    display: none;
+  }
+}
+
+@media (max-width: 799px){
+  .container img, .menuimg{
+    width: 30px;
+    height: 30px;
+    padding: 0.5em;
+  }
+  header, body{
+    max-width:100%;
+  }
+  h1{
+    font-size: 40px;
+  }
+  .menu{
+    transform: scale(0.8);
+  }
+  .listamenu{
+    font-size: 15px;   
+  }
+  .pesquisa::placeholder, .contatoemail::placeholder{
+    font-size: 12px;
+  }
+  .titulos{
+    font-size: 18px;
+    width: 90%;
+  }
+  .descricao, .descricaotexto, .descricaolivro, .descricaotitulo, .topicoslink, .iniciotexto{
+    font-size: 20px;
+  }
+  .iniciotitulo{
+    font-size: 35px;
+  } 
+  .indicacoes{
+    padding: 1em
+  }
+  .botao{
+     padding: 1em 1em;
+    max-width: 70%;
+  }
+  .contatotitulo, .contatotexto{
+    font-size: 30px;
+    max-width: 90%;
+  }
+  .contatoemail::placeholder{
+    background: auto;
+    background-image: none;
+  }
+  .saibamais{
+    width: auto;
+    padding: 0;
+  }
+  .saibamais img, .autor{
+    width:130px;
+    height: auto;
+    max-width: 90%;
+    margin-top: 5em;
+  }
+  .botao{
+    width: 50%;
+  }
+  .swiper-slide img{
+    width: 80px;
+    height: auto;
+    gap: 20px;
+  }
+  .topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .topicostitulos{
+    font-size: 25px;
+  }
+  .topicositem{
+    height: 40px;
+    font-size: 14px;
+  }
+  .topicoslink:hover{
+    font-size: 22px;
+  }
+  .listarodape, .rodapelink{
+    display: none;
+  }
+  .rodapetitulo{
+    font-size: 15px;
+    width: 90%;
+  }
+  .opcoes{
+    display: none;
+  }
+  .contato{
+    height: auto;
+    text-align: center;
+  }
+  .descricao img{
+   margin-bottom: 20px; 
+  }
+}
+
